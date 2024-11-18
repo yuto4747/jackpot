@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+#game-board {
+    display: flex; /* 横並び */
+    justify-content: center;
+    gap: 10px;
+    margin: 20px auto;
+    width: fit-content;
+}
+
+.card {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
+    font-size: 24px;
+    border: 2px solid #333;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.card.flipped {
+    background-color: #ffa60094;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgb(243, 242, 242);
+    transform: scale(1.1);
+}
+
+#controls {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#status {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+#reset-button {
+    margin-top: 40px; /* リセットボタンを下に離す */
+}
